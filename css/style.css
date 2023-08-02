@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
-
-
 *{
     margin: 0;
     box-sizing: border-box;
@@ -11,11 +9,6 @@ body{
     justify-content: center;
     background-color: gray;
 }
-.title1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    margin: 30px auto;
-}
 .table-form{
     width: 500px;
     height: 500px;
@@ -23,27 +16,53 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px auto;
-    background-color: whitesmoke;
+    margin: 20px auto;
+    background-color: rgb(247, 240, 240);
     border-radius: 20px;
     box-shadow: 3px 3px 10px black;
 }
+.title1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin: 30px auto;
+}
 .form {
-    margin: 20px auto;
+    margin: 10px auto;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 30px;
 }
+.valueText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
 
+}
+.fromDisTitle , .toDisTitle {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+}
+.fromDis1 , .toDis1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
 .buttons{
     width: 400px;
     margin: 20px;
     display: flex;
     justify-content: space-evenly;
-    
 }
 .buttons1{
     font-family: 'Poppins', sans-serif;
-    background-color: grey;
+    background-color: rgb(75, 121, 248);
+    color: azure;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+.buttons2{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(238, 121, 121);
     color: azure;
     border-radius: 5px;
     width: 100px;
@@ -52,5 +71,45 @@ body{
 .ans{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 30px;
-    color: red;
+    color: rgb(31, 41, 189);
+}
+
+@media only screen and (max-width:420px){
+    .table-form{
+        margin: 20px auto;
+        width: 80%;
+        height: 80%;
+    }
+    .title1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        margin: 20px;
+        text-align: center;
+    }
+    .form {
+        margin: 10px auto;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .valueText {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        width: 150px;
+        text-align: center;
+    }
+    .buttons{
+        width: 80%;
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    .ans{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 25px;
+        color: rgb(31, 41, 189);
+        text-align: center;
+    }
 }

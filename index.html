@@ -10,21 +10,30 @@
     <script defer src="script/main.js"></script>
     
     <div class="table-form">
-        <h1 class="title1">DISTANCE meter to mile CONVERTER</h1>
+        <h1 class="title1">DISTANCE foot to mile CONVERTER</h1>
         <form action="#" method="#" class="form">
-            <label for="FVal">ENTER VALUE IN FOOT</label>
-            <input type="number" id="FVal">
+            <label for="FVal">ENTER A VALUE:</label>
+            <input type="number" id="FVal" class="valueText">
         </form>
-        
-    <div class="buttons">
-        <button class="buttons1" onclick="meter ()">METER</button>
-        <button class="buttons1" onclick="kilometer ()">KILOMETER</button>
-        <button class="buttons1" onclick="mile ()">MILE</button>
-    </div>
-       
-    
-      
-        <h1 class="ans" id="answer1"></h1>
+        <h1 class="fromDisTitle">From Distance</h1>
+        <select name="fromDistance" id="fromDistance" class="fromDis">
+            <option class="fromDis1" value="ft">FOOT</option>
+            <option class="fromDis1" value="mt">METER</option>
+            <option class="fromDis1"value="km">KILOMETER</option>
+            <option class="fromDis1" value="ml">MILE</option>
+        </select>
+        <h1 class="toDisTitle">To Distance</h1>
+        <select name="toDistance" id="toDistance" class="toDis">
+            <option class="toDis1" value="ft">FOOT</option>
+            <option class="toDis1" value="mt">METER</option>
+            <option class="toDis1" value="km">KILOMETER</option>
+            <option class="toDis1" value="ml">MILE</option>
+        </select>
+        <div class="buttons">
+            <input  class="buttons1" type="button" value="CONVERT" onclick="convert ()">
+            <input  class="buttons2" type="button" value="CLEAR" onclick="eraseData ()">
+        </div>
+        <h1 class="ans" id="answer1">LET'S CONVERT</h1>
     </div>
    
 </body>
